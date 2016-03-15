@@ -5,19 +5,19 @@
   </div>
 
    <div class="container">
-    <div class="btn-group btn-group-justified" role="group" aria-label="...">
 
+    <div class="btn-group btn-group-justified" role="group" aria-label="...">
       <div class="btn-group" role="group">
         <button type="submit" class="btn btn-default b1">
-          <h2>Comedy</h2> 
+          <h2>Comedy <br> <%=@comedy%></h2> 
           <br> 
           <img class="picture-1" src="http://cdn2.bigcommerce.com/server1600/1900f/product_images/uploaded_images/comedymeltdown.jpg">
         </button>
-      </div>
+      </div> 
 
       <div class="btn-group" role="group">
         <button type="button" class="btn btn-default b8">
-          <h2>Random</h2> 
+          <h2>Random <br> <%=@random%></h2> 
           <br> 
           <img class="picture-1" src="https://wandervogeldiary.files.wordpress.com/2015/08/random.jpg">
         </button>
@@ -25,7 +25,7 @@
 
       <div class="btn-group" role="group">
         <button type="submit" class="btn btn-default b3">
-          <h2>Creep</h2> 
+          <h2>Creep <br> <%=@creep%></h2> 
           <br> 
           <img class="picture-1" src="https://illuminatedverse.files.wordpress.com/2015/07/creep.jpg">
         </button>
@@ -37,7 +37,7 @@
 
       <div class="btn-group" role="group">
         <button type="button" class="btn btn-default b4">
-          <h2>Nerdy</h2> 
+          <h2>Nerdy <br> <%=@nerdy%></h2> 
           <br>
           <img class="picture-1" src="https://pbs.twimg.com/profile_images/2267187011/talk-nerdy-to-me-t-shirt-vintage-t-shirt-review-rad-rowdies-rad-rowdies-1_400x400.jpg">
         </button>
@@ -45,7 +45,7 @@
 
       <div class="btn-group" role="group">
         <button type="button" class="btn btn-default b5">
-          <h2>Music</h2>
+          <h2>Music <br> <%=@music%></h2>
           <br>
           <img class="picture-1" src="http://musicbloglist.com/wp-content/uploads/2014/04/Music-Blog-List-Logo.png">
         </button>
@@ -53,7 +53,7 @@
 
       <div class="btn-group" role="group">
         <button type="button" class="btn btn-default b6">
-          <h2>Perfect</h2> 
+          <h2>Perfect <br> <%=@perfect%></h2> 
           <br> 
           <img class="picture-1" src="http://res.images.picsquare.com/images/designs/1009.jpg">
         </button>
@@ -65,32 +65,247 @@
 
       <div class="btn-group" role="group">
         <button type="button" class="btn btn-default b7">
-          <h2>Basic</h2> 
+          <h2>Basic <br> <%=@basic%></h2> 
           <br> 
           <img class="picture-1" src="http://33.media.tumblr.com/f74a005d9761dcdfae0bdd022268c44e/tumblr_n32gbpkD0t1qasthro1_400.gif">
         </button>
       </div>
 
       <div class="btn-group" role="group">
-        <button id="theButton" type="submit" class="btn btn-default b2">
-          <h2>Dirty</h2> 
+        <button type="button" class="btn btn-default b2">
+          <h2>Dirty <br> <%=@dirty%></h2> 
           <br> 
           <img class="picture-1" src="https://pbs.twimg.com/profile_images/583401306418782208/YqSehjlX.jpg">
         </button>
-        <br>
-        <div> <span class="dirty"></span> </div>
+
       </div>
 
       <div class="btn-group" role="group">
         <button type="button" class="btn btn-default b9">
-          <h2>Tv Shows</h2> 
+          <h2>TV Shows <br> <%=@tv_shows%></h2> 
           <br> 
           <img class="picture-1" src="http://www.elcivics.com/esl/tv-shows/tv-shows.jpg">
         </button>
       </div>
     </div>
+
    </div>
+     
+
+
+
+<p>Click the button to trigger a function that will output "Hello World" in a p element with id="demo".</p>
+
+<button onclick="myFunction()">Click me</button>
+
+<p id="demo"></p>
 
 
 
 
+<div class="page-header">
+  <h1 class="Title">Pick Up Lines</h1>
+  <h1 class="Title">Get all the chicks.</h1>
+</div>
+
+<div class="container">
+  <div class="btn-group btn-group-justified" role="group" aria-label="...">
+
+    <div class="btn-group" role="group">
+      <button onclick="myFunction1()" id="theButton1" type="submit" class="btn btn-default click1">
+          <h2>Comedy</h2> 
+        </button>
+      <br>
+           <p id="demo1"></p>
+    </div>
+
+    <div class="btn-group" role="group">
+      <button onclick="myFunction2()" id="theButton2" type="button" class="btn btn-default click2">
+          <h2>Random</h2> 
+        </button>
+      <br>
+           <p id="demo2"></p>
+    </div>
+
+    <div class="btn-group" role="group">
+      <button onclick="myFunction3()" id="theButton3" type="submit" class="btn btn-default click3">
+          <h2>Creep</h2> 
+        </button>
+      <br>
+           <p id="demo3"></p>
+    </div>
+
+  </div>
+
+  <div class="btn-group btn-group-justified" role="group" aria-label="...">
+
+    <div class="btn-group" role="group">
+      <button onclick="myFunction4()" id="theButton4" type="button" class="btn btn-default click4">
+          <h2>Nerdy</h2>
+        </button>
+      <br>
+           <p id="demo4"></p>
+    </div>
+
+    <div class="btn-group" role="group">
+      <button onclick="myFunction5()" id="theButton5" type="button" class="btn btn-default click5">
+          <h2>Music</h2>
+        </button>
+      <br>
+           <p id="demo5"></p>
+    </div>
+
+    <div class="btn-group" role="group">
+      <button onclick="myFunction6()" id="theButton6" type="button" class="btn btn-default click6">
+          <h2>Perfect</h2> 
+        </button>
+      <br>
+     <p id="demo6"></p>
+    </div>
+
+  </div>
+
+  <div class="btn-group btn-group-justified last" role="group" aria-label="...">
+
+    <div class="btn-group" role="group">
+      <button onclick="myFunction7()" id="theButton7" type="button" class="btn btn-default click7">
+          <h2>Basic</h2>
+        </button>
+      <br>
+<p id="demo7"></p>
+    </div>
+
+    <div class="btn-group" role="group">
+      <button onclick="myFunction8()" id="theButton8" type="submit" class="btn btn-default click8">
+          <h2>Dirty</h2>
+        </button>
+      <br>
+      <p id="demo8"></p>
+    </div>
+
+    <div class="btn-group" role="group">
+      <button onclick="myFunction9()" id="theButton9" type="button" class="btn btn-default click9">
+          <h2>Tv Shows</h2>
+        </button>
+      <br>
+
+     <p id="demo9"></p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<script>
+    function myFunction1() {
+    document.getElementById("demo1").innerHTML = "<%=@comedy%>";
+}
+    function myFunction2() {
+    document.getElementById("demo2").innerHTML = "<%=@random%>";
+}
+  function myFunction3() {
+    document.getElementById("demo3").innerHTML = "<%=@creep%>";
+}
+    function myFunction4() {
+    document.getElementById("demo4").innerHTML = "<%=@nerdy%>";
+}
+    function myFunction5() {
+    document.getElementById("demo5").innerHTML = "<%=@music%>";
+}
+    function myFunction6() {
+    document.getElementById("demo6").innerHTML = "<%=@perfect%>";
+}
+  function myFunction7() {
+    document.getElementById("demo7").innerHTML = "<%=@basic%>";
+}
+  function myFunction8() {
+    document.getElementById("demo8").innerHTML = "<%=@dirty%>";
+}
+function myFunction9() {
+    document.getElementById("demo9").innerHTML = "<%=@tv_shows%>";
+}
+  function myFunction() {
+    document.getElementById("demo").innerHTML = "Hello World";
+}
+</script>
+<span>Hover over me!</span>
+<div class="example">hello</div>
+<br>
+<span>Comedy</span>
+<div class="example"><%= 
+    phrase1 = ["Are you an orphanage? Cause I wanna give you kids.", "I was feeling a little off today, but you definitely turned me on.", "If you were a vegetable you'd be a cute-cumber.", "I don't have a library card, but do you mind if I check you out?", "Are you religious? Because you're the answer to all my prayers.", "Do you have a map? I'm getting lost in your eyes."]
+  @comedy = phrase1.shuffle.sample
+
+ %></div>
+<br>
+
+<span>Random</span>
+<div class="example"><%= 
+    phrase2 = ["Are you a Walker? Because you just walked away with my heart.", "Hi, I'm a zombie. Mind if I take a bite out of you?", "If I turned into a walker, I'd come after you first!", "If I was a zombie, I think I would like the taste of you.", "My bites will infect you with love.", "Walkers are coming…and so am I", "Am I Daryl Dixon? Because I have an arrow and I'd like to penetrate you.", "My love for you is 99.1% pure.", "Come inside my RV and I'll show you some real chemistry.", "Girl, your eyes are bluer than Heisenberg's crystal!",
+  "I like your dress, but it would look better on the floor of my meth lab.",
+  "Feelin' lonely, girl? Better call Saul!",
+  "Your body is a wonderland and I want to be Alice.",
+  "Do you know what my shirt is made of? Boyfriend material.", "I seem to have lost my phone number. Can I have yours?",
+  "Does your left eye hurt? Because you've been looking right all day.", "Are you a parking ticket? 'Cause you've got fine written all over you.", "I'm not a photographer, but I can picture me and you together.", "Are you a camera? Because every time I look at you, I smile.", "Do you have a Band-Aid? Because I just scraped my knee falling for you.", "If I were a stop light, I'd turn red every time you passed by, just so I could stare at you a bit longer.", "I wanna live in your socks so I can be with you every step of the way.", "There are people who say Disneyland is the happiest place on earth. Apparently, none of them have ever been in your arms.",
+  "Call me AC/DC, because I'm gonna rock you all night long!", "You must be a choir director, because you make my heart sing!",
+  "Is your name Google? Because you have everything I've been searching for.", "You had me at 'Hello World.'", "Are you a computer keyboard? Because you're my type.", "If you were a web browser, you'd be called a Fire-foxy lady", "Your beauty rivals the graphics of Call of Duty.", "You're so pretty, I wouldn't even need to use an Instagram filter if I took your photo.", "Where's the 'like' button for that smile?", "If you were an ebay auction, I'd totally 'buy it now'.", "I googled your name earlier... I clicked on 'I'm Feeling Lucky.'", "Girl, you are hotter than the bottom of my laptop.", "Is your name Wi-fi? Because I'm really feeling a connection.", "You turm my software into hardware.",
+  "If you're feeling down, I can feel you up.", "Does this rag smell like chloroform to you?", "You look much more attractive in person than you do through my telescope.", "Are you a corn field, because im stalking you.", "Just say yes now and I wont have to spike your drink.", "Im throwing a house party... and the only person invited is you.", "Call the cops... see who comes first.", "If I could be anything, I'd love to be your bathwater.", "Theres a tornado, come in my basement.", "You have the cutest smile when you sleep.", "If I'd follow you home, would you keep me?", "I have a van in the back and there is free candy in it.", "Shall I wait for you in my car or will your closet do.", "Did you sit in a pile of sugar? Cause you have a pretty sweet ass.", "Is your daddy a Baker? Because you've got some nice buns!", "There is no time to explain how I got bit there, I just need someone to suck the poison out.", "There are so many things to do with the human mouth. Why waste it on talking?", "Are you an orphanage? Cause I wanna give you kids.", "I was feeling a little off today, but you definitely turned me on", "If you were a vegetable you'd be a cute-cumber.", "I don't have a library card, but do you mind if I check you out?", "Are you religious? Because you're the answer to all my prayers.", "Do you have a map? I'm getting lost in your eyes."]
+    @random = phrase2.shuffle.sample
+ %></div>
+<br>
+
+<span>Dirty</span>
+<div class="example"><%= 
+    phrase3 = ["Did you sit in a pile of sugar? Cause you have a pretty sweet ass.", "Is your daddy a Baker? Because you've got some nice buns!", "There is no time to explain how I got bit there, I just need someone to suck the poison out.", "There are so many things to do with the human mouth. Why waste it on talking?", "I might not go down in history, but I’ll go down on you!", "You know why I am like a squirrel? Cause I want to bury my nuts in you.", "Pizza is my second favourite thing to eat in bed."]
+   @dirty = phrase3.shuffle.sample
+ %></div>
+<br>
+
+<span>Creep</span>
+<div class="example"><%=
+  phrase4 = ["If you're feeling down, I can feel you up.", "Does this rag smell like chloroform to you?", "You look much more attractive in person than you do through my telescope.", "Are you a corn field, because im stalking you.", "Just say yes now and I wont have to spike your drink.", "Im throwing a house party... and the only person invited is you.", "Call the cops... see who comes first.", "If I could be anything, I'd love to be your bathwater.", "Theres a tornado, come in my basement.", "You have the cutest smile when you sleep.", "If I'd follow you home, would you keep me?", "I have a van in the back and there is free candy in it.", "Shall I wait for you in my car or will your closet do."]
+    @creep = phrase4.shuffle.sample%></div>
+<br>
+
+<span>Nerdy</span>
+<div class="example"><%= 
+    phrase5 = ["Is your name Google? Because you have everything I've been searching for.", "You had me at 'Hello World.'", "Are you a computer keyboard? Because you're my type.", "If you were a web browser, you'd be called a Fire-foxy lady", "Your beauty rivals the graphics of Call of Duty.", "You're so pretty, I wouldn't even need to use an Instagram filter if I took your photo.", "Where's the 'like' button for that smile?", "If you were an ebay auction, I'd totally 'buy it now'.", "I googled your name earlier... I clicked on 'I'm Feeling Lucky.'", "Girl, you are hotter than the bottom of my laptop.", "Is your name Wi-fi? Because I'm really feeling a connection.", "You turn my software into hardware.", "You are hotter than the bottom of my laptop.", "You look familiar, didn’t we take a class together? I could’ve sworn we had chemistry."]
+    @nerdy = phrase5.shuffle.sample
+ %></div>
+<br>
+
+<span>Music</span>
+<div class="example"><%= 
+    phrase6 = ["Call me AC/DC, because I'm gonna rock you all night long!", "You must be a choir director, because you make my heart sing!", "Do you like heavy metal? Cause i can teach you how to scream.", "Lets make music on my sheets.", "I wanna duet with you.", "Let's cut to the chase and duet already.", "One night with me and you'll hit all the high notes.", "Do you like Adele? Cause i can tell you like rolling in the D.", "All you need is safe sax,a reed, and me."]
+    @music = phrase6.shuffle.sample
+ %></div>
+<br>
+
+<span>Perfect</span>
+<div class="example"><%= 
+    phrase7 = ["Does your left eye hurt? Because you've been looking right all day.", "Are you a parking ticket? 'Cause you've got fine written all over you.", "I'm not a photographer, but I can picture me and you together.", "Are you a camera? Because every time I look at you, I smile.", "Do you have a Band-Aid? Because I just scraped my knee falling for you.", "If I were a stop light, I'd turn red every time you passed by, just so I could stare at you a bit longer.", "I wanna live in your socks so I can be with you every step of the way.", "There are people who say Disneyland is the happiest place on earth. Apparently, none of them have ever been in your arms.","I’m no organ donor but I’d be happy to give you my heart.", "If I were a cat i’d spend all 9 lives with you."]
+    @perfect = phrase7.shuffle.sample
+ %></div>
+<br>
+
+<span>Basic</span>
+<div class="example"><%= 
+    phrase8 = ["Did you sit in a pile of sugar? Cause you have a pretty sweet ass.", "Is your daddy a Baker? Because you've got some nice buns!", "There is no time to explain how I got bit there, I just need someone to suck the poison out.", "There are so many things to do with the human mouth. Why waste it on talking?", "I might not go down in history, but I’ll go down on you!", "You know why I am like a squirrel? Cause I want to bury my nuts in you.", "Pizza is my second favourite thing to eat in bed."]
+    @basic = phrase8.shuffle.sample
+ %></div>
+<br>
+<span>TV Shows</span>
+<div class="example"><%= 
+    phrase9 = ["Are you a Walker? Because you just walked away with my heart.", "Hi, I'm a zombie. Mind if I take a bite out of you?", "If I turned into a walker, I'd come after you first!", "If I was a zombie, I think I would like the taste of you.", "My bites will infect you with love.", "Walkers are coming…and so am I", "Am I Daryl Dixon? Because I have an arrow and I'd like to penetrate you." ,"My love for you is 99.1% pure.", "Come inside my RV and I'll show you some real chemistry.", "Girl, your eyes are bluer than Heisenberg's crystal!" ,"I like your dress, but it would look better on the floor of my meth lab.", "Feelin' lonely, girl? Better call Saul!", "Your body is a wonderland and I want to be Alice." ]
+@tv_shows = phrase9.shuffle.sample
+ %></div>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+ http://codepen.io/sefu/pen/WwvpMd
